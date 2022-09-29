@@ -1,0 +1,566 @@
+﻿/*GLOBAL CSS TWEAKS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+  overflow-x:auto;
+    
+}
+
+
+.main-nav-link .result{
+    color:#fff !important;
+}
+
+html {
+    /*percentage of users browser font size setting (1rem = 10px) */
+    font-size:62.5%;
+    font-family: 'Rubik', sans-serif;
+    color: #444;
+    
+   
+}
+
+/*FROM THE MASTER FILE, CHRONOLOGICAL APPEARENCE OF CLASSES*/
+.hero {
+    display: flex;
+    grid-template-columns:1fr;
+    width: 1fr;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-image: url('../img/Background1.png');
+    background-color: #fdf2e9;
+}
+.margin-left{
+    margin-left:5rem;
+}
+
+.hero1 {
+    display: flex;
+    grid-template-columns: 1fr;
+    width: 1fr;
+    height: 42vh;
+    background-repeat: no-repeat;
+    background-image: url('../img/result.png');
+    background-color: #fdf2e9;
+}
+
+.container {
+    margin: -3.5rem 20rem;
+    width:100%;
+    display:flex;
+
+   
+}
+
+
+.container-collabs {
+    margin: -3.5rem 18rem;
+}
+/*NAVIGATION BUTTON AND LAYOUT***********************************************/
+
+.top-row {
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--top-row-height);
+    display: flex;
+    background: #333333 !important;
+}
+
+.logo {
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.nav-btn {
+    width: var(--top-row-height);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+    /* Styling Google Material Icons */
+
+.nav-btn > span {
+    color: #ffffff !important;
+    font-size: 2.4rem;
+    font-size: calc(var(--top-row-height) / 2);
+}
+
+.nav {
+    --nav-width: 300px;
+    position: fixed;
+    top: .5rem;
+    right: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background: black;
+    transform: translateX(calc(-1 * var(--nav-width)));
+    transition: transform 0.25s;
+}
+
+.nav-open {
+    transform: translateX(0);
+}
+
+.nav-link {
+    display: block;
+    font-family: sans-serif;
+    font-size: 24px;
+    padding: 24px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+    .nav-link:not(:last-child) {
+        border-bottom: 1px solid #222222;
+    }
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+.nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-overlay-open {
+    display: block;
+}
+
+
+
+/*CONTACT PAGE*/
+.contact {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-top: 10rem;
+    border-top: .05rem solid #aca7a7de;
+    border-bottom: .05rem solid #aca7a7de;
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+}
+/*FOR THE WRITING ON THE MAIN IMAGE */
+.header-container {
+    margin-right: 50rem;
+    margin-top: -7.5rem;
+}
+
+.header-container-inner {   
+    margin-top: 40rem;
+    margin-right:-5rem;
+}
+
+.logo{
+    font-size:4rem;
+    margin-right:15rem;
+    margin-top:-1.5rem;
+    width:12rem;
+    font-family:Calibri;
+}
+    
+/*SEARCH BAR*/
+.search {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: .8rem;
+    padding: .5rem 1rem;
+    margin-right: 10rem;
+    width: 40rem;
+    margin-top: .3rem;
+    height: 2rem;
+    
+    gap: 2rem;
+}
+.nav-link1{
+    font-size:3rem;
+    padding-right:2rem;
+    color:#95c3ee;
+}
+.search1 {
+    margin-top:5rem;
+    margin-right:40rem;
+    border-radius: .8rem;
+    padding: .5rem 1rem;   
+    width: 30rem;
+}
+
+
+/*STYLES FOR WRITING AND BUTTONS ON MAIN IMAGE */
+.heading-primary {
+    max-width: 18rem;
+    font-size: 7.4rem;
+    margin-right: -83rem;
+    margin-top: 12.5rem;
+    line-height: 1.05;
+    font-weight:700;
+        
+}
+p{
+    font-size:3rem;
+    line-height:1.6;
+    margin-bottom:7.2rem; 
+}
+
+/*****************BUTTONS***************/
+.btn:link,
+.btn:visited {
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: #2596be;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2.4rem 4.8rem;
+    border-radius: 1.6rem;
+    margin-right: -83rem;
+    /*transition to a different color on a button*/
+    transition: background-color .5s;
+}
+
+.btn:hover,
+.btn:active {
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: #07536f;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2.4rem 4.8rem;
+    border-radius: 1.6rem;
+    margin-right: -83rem;
+}
+
+.btn-search {
+    margin-top:5rem;
+    font-size: 1.8rem;
+    background-color: #2596be;
+    border-radius: 1.4rem;
+    padding: .7rem 1rem;
+    color: #fff;
+}
+
+    .btn-search:hover {
+        background-color: #07536f;
+        
+    }
+
+.btn-nav:link,
+.btn-nav:visited {
+    color: black;
+    border: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2.4rem;
+    display: inline-block;
+    font-size:2.4rem;
+    animation-name: glow;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.btn-nav:hover,
+.btn-nav:active {
+    color: #444;
+    border: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2.4rem;
+    display: inline-block;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 2rem #07536f,0px 0px 2rem #13045c;
+    }
+
+    to {
+        text-shadow: 10px 10px 3rem #fff,10px 10px 3rem #a49aea;
+    }
+}
+
+h2{
+    font-size:6.8rem;
+    margin-bottom:6.8rem;
+}
+.heading-third {
+    font-family:Calibri;
+    font-size: 4.5rem;
+    margin-bottom: 6.2rem;
+}
+
+.heading-fifth {
+    font-size: 2.4rem;
+    margin-right: 9.4rem;
+    background-color: #f7f7f7;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 1rem !important;
+}
+
+.btn-cat {
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 3rem;
+    display: inline-block;
+    font-size: 2.2rem;
+    padding: .5rem .5rem;
+    border-radius:1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(-180deg, rgb(130, 174, 228) 0%, rgb(76, 96, 138) 100%);
+}
+.category{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+/*SECTION OF COMPANIES COLLABIRATIONS*/
+.collabs {
+    display: flex;
+    grid-template-columns: repeat(6,1fr);
+    padding-top: 10rem;
+    border-top: .05rem solid #aca7a7de;
+    border-bottom: .05rem solid #aca7a7de;
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+}
+
+.img-collabs {
+    min-width: 1fr;
+    min-height: 1fr;
+    max-width: 1fr;
+    max-height: 1fr;
+    margin-left:3.5rem;
+}
+
+
+/*CARD STYLING FOR PRODUCTS*/
+.prod-section {
+    display:flex;
+    grid-template-columns:repeat(4,1fr);
+    border-bottom: .05rem solid #aca7a7de;
+    padding: 4.5rem 0;
+    background-color: #f7f7f7;
+}
+
+.prod-box {
+    background-color:#fbfbfb;
+    transition: all .4s;
+    border: none;
+    margin-left: 4.8rem;
+    padding-bottom:.5rem;   
+    min-height: 42rem;
+    max-height: 42rem;
+    max-width: 38rem;
+    min-width: 38rem;
+    box-shadow: 0 0 .3rem;
+}
+
+    .prod-box:first-child{
+        margin-right:9rem;
+    }
+
+    .prod-box:hover{
+       
+        box-shadow:0 0 0 3px #ada3a3;
+    }
+.prod-item {
+   
+    display: flex;
+    flex-direction:row;
+    gap: 3.6rem;
+    margin-top:2.1rem;
+}
+.prod-item-result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3.6rem;
+    margin-top: 2.1rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.prod-item-all-prods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 3.6rem;
+    margin-top: 2.1rem;
+    align-content:center;
+    align-items:center;
+    justify-content:center;
+}
+ 
+
+    .prod-img {
+        background-color: #efe2e2;
+        max-width: 38rem;
+        min-width: 38rem;
+        min-height: 30rem;
+        max-height: 30rem;
+    }
+
+.grid-price-btn{
+    
+    display:grid;
+    grid-template-columns:repeat(2 ,1fr);
+}
+
+.prod-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 2.4rem;
+    font-family: 'Rubik',sans-serif;
+    align-items: center;
+    margin-right: .4rem;
+    justify-content: center;
+    color: #07536f89;
+}
+
+.timer {
+    font-size: 3rem;
+    font-family: 'Rubik',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #07536f;
+}
+
+
+.price:link,
+.price:visited {
+    position: absolute;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Rubik',sans-serif;
+    margin-right: 23rem;
+    color: #07536f66;
+    transition: all 1s;
+    margin-top:2rem;
+}
+
+
+
+
+.prod-btn:link,
+.prod-btn:visited {
+    opacity:0;
+    visibility:hidden;
+    font-size: 2rem;
+    width: 10rem;
+    border:.1rem solid #000;
+    font-weight: 600;
+    background-color: #fff;
+    color: #a8a1a1de;
+    text-decoration: none;
+    display: inline-block;
+    padding: .9rem 2rem;
+    border-radius: 1.4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    transition: all .5s;
+}
+
+.results{
+    font-size:3.5rem;
+    color:#e97f7f;
+    margin-right:10rem;
+}
+
+
+
+
+.prod-box:hover .prod-btn,
+.prod-box:active .prod-btn {
+    opacity: 1;
+    visibility: visible;
+    font-size: 2rem;
+    width: 10rem;
+    font-weight: 600;
+    background-color: #07536f;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: .9rem 2rem;
+    border-radius: 1.4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+
+/*FOOTER********************************************************************/
+.footer-grid {
+    background-color: #fbfbfb;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    direction: rtl;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.about-us p {
+    font-size: 1.8rem;
+}
+.about-us{
+    
+    padding:0rem 3rem;
+}
+
+.footer-collabs{
+    padding: 0 2rem;
+    margin-right:10rem;
+}
+ a{
+    text-decoration:none;
+    color:black;
+}
+
+.footer-img-collabs {
+    max-width: 15rem;
+    max-height: 7rem;
+}
+.footer-rights {
+    padding-left:70rem;
+    align-items:center;
+    align-content:center;
+    color: #fdf2e9;
+    background-color: #fdf2e9;
+}
+.text-black {
+    border: 2px solid;
+    background-color: #fdf2e9;
+    border-radius: 12px;
+    padding: .5rem 1rem;
+    color: #fdf2e9;
+    margin: 5rem 5rem;
+}
+.footer-contact p {
+    padding: -2rem;
+    margin-bottom: 4rem;
+}

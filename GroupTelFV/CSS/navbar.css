@@ -1,0 +1,143 @@
+﻿
+.top-row {
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    font-size:1.6rem;
+    background: #333333;
+    
+}
+.top-row-contact{
+    background:none;
+}
+.nav-btn-contact{
+    background:none;
+    border-radius:1.2rem;
+}
+
+.logo {
+    visibility: hidden;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.material-icons{
+    font-size:1.5rem;
+    margin-right:.2rem;
+}
+
+.nav-btn {
+    width: var(--top-row-height);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.nav-contact-btn {
+    width: var(--top-row-height);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+    /* Styling Google Material Icons */
+    .nav-btn > span {
+        color: #ffffff;
+        font-size: calc(var(--top-row-height) / 2);
+    }
+.nav-contact-btn > span {
+    color: #ffffff;
+    font-size: calc(var(--top-row-height) / 2);
+}
+.nav {
+    flex-direction:column;
+   
+    position: fixed;
+    top: 0;
+
+    right: 0;
+    width: 25rem;
+    height: 100vh;
+    padding-top:-2rem;
+    background: black;
+    transform: translateX(calc(-1 * var(--nav-width)));
+    transition: transform 0.25s;
+}
+
+.nav-contact {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25rem;
+    height: 100vh;
+    padding-top: -2rem;
+    background: black;
+    transform: translateX(calc(-1 * var(--nav-width)));
+    transition: transform 0.25s;
+}
+
+
+    
+    .nav-open {
+        transform: translateX(0);
+    }
+.nav-contact-open {
+    transform: translateX(0);
+}
+
+.nav-link {
+    display: block;
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding: 1.4rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-link1 {
+    font-size:2.5rem;
+    padding-bottom:1rem;
+    padding-right: 2rem;
+    color: #95c3ee;
+}
+
+    .nav-link:not(:last-child) {
+        border-bottom: 1px solid #222222;
+    }
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+.nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-overlay-open {
+    display: block;
+
+}
+.nav-overlay-contact-open {
+    display: block;
+}
+

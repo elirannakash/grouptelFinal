@@ -1,0 +1,519 @@
+﻿/*rem and em do NOT depend on HTML font size in media queries. 1rem = 1em = 16px* use em and not rem*/
+/*
+
+/*over 1920px*/
+@media(min-width: 122em){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        min-width: 192rem;
+        overflow-x: hidden;
+    }
+    .hero{
+        width:1fr;
+    }
+}
+
+
+
+
+
+
+/*under 1877px**************************************************************************/
+
+
+
+@media (max-width: 115em){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   
+    body {
+        min-width:172rem;
+        overflow-x: hidden;
+    }
+    .hero1 {
+        display: flex;
+        width: 100%;
+        height: 55vh;
+        left: -20rem;
+        background-repeat: no-repeat;
+        background-image: url('../img/result.png');
+        background-color: #fdf2e9;
+    }
+    .logo{
+        display:none;
+    }
+    .top-row {
+        min-width: 172rem;
+    }
+   
+    .nav {
+        min-width: 172rem;
+    }
+    .material-icons {
+        min-width: 172rem;
+        margin-right: -80rem;
+        position: sticky;
+    }
+
+    .hero {
+        min-width: 172rem;
+    }
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .form-change {
+        margin-right: 100rem;
+    }
+
+
+    .search {
+        margin-right: 10rem;
+        margin-top: 8rem;
+    }
+
+
+
+   
+    .margin-left{
+        margin-right:3rem;
+    }
+    .prod-section {
+        border-bottom: .05rem solid #aca7a7de;
+        padding: 1.5rem 0;
+        background-color: #f7f7f7;
+        
+    }
+    .nav-open .prod-section {
+        margin-right: 110rem;
+    }
+
+    .prod-item {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
+        gap:4.2rem;
+        align-items:center;
+        justify-content:center;
+      
+    }
+    .prod-item-result {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+        gap: 4.2rem;
+        align-items: center;
+        justify-content: center;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3.6rem;
+        margin-top: 2.1rem;
+        align-content: center;
+        align-items: center;
+        justify-content: center;*/
+    }
+    .prod-box:first-child{
+        margin-right:1em;
+        
+    }
+
+    .prod-box {
+        background-color: #eeeae6;
+        transition: all .4s;
+        border: none;
+        margin-right:1rem;
+        margin-left: 3.8rem;
+        min-height: 42rem;
+        max-height: 42rem;
+        max-width: 60rem;
+        min-width: 60rem;
+        box-shadow: 0 0 .3rem;
+    }
+    .prod-img {
+        background-color: #efe2e2;
+        max-width: 60rem;
+        min-width: 60rem;
+        min-height: 30rem;
+        max-height: 30rem;
+    }
+    .prod-name{
+        font-size:3.2rem;
+    }
+
+
+    .price:link,
+    .price:visited {
+        position: absolute;
+        text-decoration: none;
+        font-size: 3rem;
+        font-family: 'Rubik',sans-serif;
+        margin-right: 45rem;
+        color: #07536f66;
+        transition: all 1s;
+        margin-top: 2rem;
+    }
+
+
+
+
+    .prod-btn:link,
+    .prod-btn:visited {
+       opacity:0;
+       visibility:hidden;
+        transition: all .5s ease;
+    }
+
+    .prod-box:hover .prod-btn,
+    .prod-box:active .prod-btn {
+       opacity:1;
+       visibility:visible;
+        font-size: 2rem;
+        width: 10rem;
+        font-weight: 600;
+        background-color: #07536f;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: .9rem 2rem;
+        border-radius: 1.4rem;
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
+
+
+    .search {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        border-radius: .8rem;
+        padding: -5rem 1rem;
+        margin-left:150rem;
+        width: 10rem;
+        margin-top: 2rem;
+        height: 1rem;
+        gap: .2rem;
+    }
+
+    .search1 {
+        border-radius: .8rem;
+        padding: .5rem .8rem;
+        margin-right: 10rem;
+        margin-top:3rem;
+        width: 30rem;
+    }
+
+    .btn-search {
+        margin-top:10rem;
+        font-size: 1.5rem;
+        background-color: #2596be;
+        border-radius: 1.4rem;
+        padding: .1rem 2rem;
+        margin-right:2rem;
+        margin-top:3rem;
+        color: #fff;
+    }
+
+        .btn-search:hover {
+            background-color: #07536f;
+           
+        }
+    .header-container {
+        /*margin-right: 60rem;
+        margin-top: -20.5rem;*/
+        display:none;
+    }
+
+    .grid-log-reg{
+        margin-right:2rem;
+    }
+    .prod-text {
+        font-size: 1.8rem;
+    }
+    /*FOR JOINGROUP PAGE*******************/
+   
+    .prod-Name-join{
+        display:flex;
+        align-items:flex-end;
+        justify-content:left;
+        font-size:5rem;
+    }
+    .literal-join {
+       
+        display: flex;
+       margin-right:-2rem;
+        justify-content: center;
+        font-size: 2rem;
+        width:25rem;
+    }
+
+    .prodBox-Container-join {
+       
+        margin: 2rem 5rem 5rem 10rem;
+        backdrop-filter: blur(5rem);
+    }
+    /*FOR JOINGROUP PAGE   END*******************/
+    .user-box{
+        margin-top:2rem;
+    }
+    .nav-change{
+        margin-left:3rem;
+        display:flex;
+    }
+    .nav-change{
+        padding:3rem;
+        list-style:none;
+    }
+    .search-change {
+        margin-left: 20rem !important;
+        margin-top: -6rem;
+    }
+    .search1-change{
+        margin-right:10rem;
+       
+    }
+    .btn-search-change{
+        margin-left:10rem;
+    }
+    
+    /*for registration page*/
+    .grid-log-reg {
+        margin-right: 100rem;
+    }
+        
+}
+
+
+
+
+
+/*UNDER 1285PX***********************************************************************/
+
+@media (max-width: 80em) {
+    body{
+        overflow-x:hidden;
+    }
+  
+    .prod-item-all-prods {
+        display: flex;
+        flex-direction: column;
+        margin-right:10rem;
+    }
+ 
+    /*for profile page*/
+    .nav-btn > span {
+        color: #ffffff !important;
+    }
+    .top-row{
+        color:#333 !important;
+    }
+    .user-box{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:1rem;
+    }
+
+
+    .literal-change-phone {
+        width: 10rem;
+        font-size: 1.2rem;
+    }
+    .info-grid-change1{
+        margin-right:8rem;
+    }
+    .search-change{
+       margin-right:30rem;
+    }
+    .nav-change {
+        margin-right: 20rem;
+    }
+    /*for profile page  END*/
+
+   
+
+   
+/*JOINGROUP page***********************/
+   
+    .img-join {
+        min-height: 50rem;
+        max-height: 50rem;
+        min-width: 90rem;
+        max-width: 90rem;
+    }
+    .wrapper{
+      margin-right:10rem;
+        min-height:100rem;
+        max-height:100rem;
+    }
+    .literal-join{
+        margin-left:-15rem;
+    }
+    .cols {
+        min-height: 100rem;
+        max-height: 100rem;
+    }
+    .back {
+        margin-right: -1rem;
+      
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .countDown-text{
+        margin-top:6rem;
+    }
+    .prod-btn-join{
+        margin-top:5rem;
+    }
+    /*FOR JOINGROUP PAGE   END*******************/
+    .hero1 {
+        display: flex;
+        width: 190rem;
+        height: 55vh;
+        background-repeat: no-repeat;
+        background-image: url('../img/result.png');
+        background-color: #fdf2e9;
+    }
+    .margin-left {
+        margin-right: 2rem;
+    }
+
+
+
+    .prod-item {
+        display:flex;
+        flex-direction:column;
+        gap: 4.2rem;
+        margin-right:23rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .prod-item-result {
+        display: flex;
+        flex-direction: column;
+        gap: 4.2rem;
+        margin-right: 23rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .header-container {
+        margin-right: 50rem;
+        margin-top: -10.5rem;
+    }
+
+    .footer-contact p {
+        font-size:1.4rem;
+    }
+
+    
+    .collabs p {
+
+        display: grid;
+        grid-template-rows:repeat(6,1fr);
+        grid-template-columns:repeat(2,1fr);
+        
+        flex-direction: column;
+    }
+
+    .img-collabs {
+        border: .1rem solid #000;
+        margin-top: 1rem;
+        min-width: 30rem;
+        max-width: 30rem;
+        min-height: 20rem;
+        max-height: 20rem;
+    }
+    .body-reg{
+        margin-right:30rem;
+        margin-left:-10rem;
+    }
+  
+    .search-reg {
+     
+        margin-left: -100rem;
+        margin-top: -30rem;
+    }
+    .grid-log-reg{
+        
+        margin-top:10rem;
+    }
+
+    .wrapper{
+        width:100%;
+
+    }
+    .front,
+    .back{
+        min-width:100rem;
+    }
+   
+   
+}
+/*under 850px*/
+@media (max-width:55em) {
+    .body-reg {
+        margin-right: 30rem;
+        margin-left: -10rem;
+    }
+    body{
+        max-width:20rem;
+        margin-right:0rem;
+       
+    }
+
+    .collabs p{
+       display:flex;
+       flex-direction:column;
+       margin-right:-10rem;
+
+    }
+    .img-collabs {
+        border: .1rem solid #000;
+        margin-top: 1rem;
+        min-width: 30rem;
+        max-width: 30rem;
+        min-height: 20rem;
+        max-height: 20rem;
+        margin-right:20rem;
+    }
+  
+   
+    .prod-item {
+       
+       
+    }
+    .prod-item-result{
+        margin-right:60rem;
+    }
+
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
+        max-width: 100rem;
+        margin-right: 25rem;
+    }
+    .footer-rights {
+        margin-right:25rem;
+    }
+
+     .top-row {
+      margin-right:0rem;
+    }
+    .search{
+        
+        margin-right:70rem;
+    }
+
+  
+    
+
+}

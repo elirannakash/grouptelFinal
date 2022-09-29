@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="general.master.cs" Inherits="GroupTelFV.general" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/general.css?v1" rel="stylesheet" />
+    <link href="CSS/Query-size.css" rel="stylesheet" />
+   <meta name="viewport" content="width=device-width",initail-scale="1.0" />
+</head>
+<body dir="rtl">
+     <div class="top-row" >
+		<button type="button" class="nav-btn">
+			<span class="material-icons" style="font-size:4.4rem; padding-right:2rem; position: center;">
+				תפריט
+			</span>
+		</button>
+		
+	</div>
+ <div class="hero">
+   <header class="nav-overlay ">
+       
+        <nav class="nav"> 
+            
+            
+                <a class="nav-link" href="Default.aspx" >בית</a>
+                <a class="nav-link" href="Login.aspx" >הרשמה/התחברות</a>
+                <%--<li><a class="main-nav-link" href="index.aspx" >קטגוריות מוצרים</a></li>--%>
+               <a class="nav-link" href="contact.aspx" >צרו קשר</a>
+                <a class="nav-link1" href="profile.aspx" >איזור אישי</a>
+
+           
+          
+    
+     </nav>
+       
+       </header>
+       
+            <div>
+                <p class="logo">GroupTel</p> 
+            </div>
+        
+          <form id="form1" runat="server" dir="rtl">  
+
+                 <a class="search" dir="rtl">
+                    <asp:TextBox runat="server" id="searchBox" placeholder="מה ברצונכם למצוא?"  CssClass="search1"   />
+                    <asp:Button runat="server" ID="searchBtn" Text="מצא" OnClick="searchBtn_Click" CssClass="btn-search" />
+                 </a>
+             
+
+         </form>
+           <div class="header-container">
+               <div class="header-container-inner">
+               <h1 class="heading-primary margin-bottom-sm"> המקום לרכישות קבוצתיות </h1>
+               <a href="register.aspx" class="btn">הצטרפו אלינו</a>
+               </div>
+           </div>
+            </div>
+   
+      
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+    <footer>
+        <div class="footer-grid">
+            
+            <div class="about-us">
+                <h3 class="heading-third">עלינו</h3>
+                        <p>
+                            זירת השופינג של גרופטל מרכזת חוויות ומוצרים בהנחות ממש משתלמות. מידי יום מתעדכנות באתר הצעות חדשות כך שלרגע לא משעמם פה.
+בין היתר תוכלו למצוא כאן הנחות ל: ימי כיף בבתי מלון, ארוחות מפנקות במסעדות, הצגות והופעות, פעילויות לכל המשפחה, אטרקציות לילדים, סדנאות ועוד יםםםם אפשרויות שמכניסות עוד קצת צבע והרבה כיף לחיים.
+בנוסף, תמצאו באתר באליגם מוצרים לבית, מוצרי חשמל ואלקטרוניקה, מחשוב, פריטי אופנה וספורט, מוצרי טיפוח ופארם, צעצועים ועוד מאות מוצרים שהופכים את היום יום לנוחים ומפנקים יותר בלי לקרוע את הכיס.
+אנחנו חברת אולטימייט ווקיישן מתחייבים בזאת שהלקוח תמיד בראש סדר העדיפיות צברנו ותק בשוק של עשרות שנים ואנחנו כאן כדי להוכיח זאת </p>
+            </div>
+            <div class="footer-collabs">
+                        <h3 class="heading-third">בשיתוף פעולה</h3>
+                        <p>
+                      <a href="https://www.fattal.co.il/" target="_blank">                    
+                    <img src="img/logo/fattal.jpg" class="footer-img-collabs" alt="fatal logo" />
+                      </a>
+
+                      <a href="https://www.isrotel.co.il/" target="_blank">
+                    <img src="img/logo/isrotel.jpg" class="footer-img-collabs" alt="isrotel logo" /> 
+                      </a>
+
+                     <a href="https://www.payngo.co.il/" target="_blank">
+                    <img src="img/logo/hashmal.png" class="footer-img-collabs" alt="mahsanei hashmal logo" /> 
+                     </a>
+
+                     <a href="https://www.shw.co.il/" target="blank">
+                    <img src="img/logo/shomrat.png" class="footer-img-collabs" alt="shomrat logo" /> 
+                     </a>
+
+                    <a href="https://ace.co.il" target="_blank">
+                    <img src="img/logo/ace.jpg" class="footer-img-collabs" alt="ace logo" />
+                    </a>
+
+                    <a href="https://homecenter.co.il" target="_blank">
+                    <img src="img/logo/home-center.jpg" class="footer-img-collabs"  alt="home center logo"/>
+                    </a>
+                
+                        </p>
+
+            </div>
+            <div class="footer-contact">
+                <h3 class="heading-third">צור קשר</h3>
+                        <p>
+                            <a href="mailto:UltimateVacation@gmail.com">
+                                <ion-icon name="mail-open-outline" class="icon"></ion-icon> grouptelgroup@gmail.com 
+                            </a>
+                        </p>
+                        <p>
+                            <ion-icon name="phone-portrait-outline" class="icon"></ion-icon><a href="tel:0522255447">052-2255447</a>  
+                        </p>
+                        <p>
+                            <ion-icon name="call-outline" class="icon"></ion-icon>  08-8555208    
+                        </p>
+            </div>
+           
+        </div>
+         <div class="footer-rights" dir="ltr">
+                 <p>
+                     <a href="#" style="text-decoration: none;">
+                            ©2021   <strong class="text-warning">UltimateVacation</strong> כל הזכויות שמורות ל 
+                                
+                                   
+                                </a>
+                        </p>
+            </div>
+    </footer>
+          
+
+     <script>
+        
+     </script>
+    <script>
+        
+    </script>
+   <%-- <script src="JS/nav.js"></script>--%>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="JS/navbar.js"></script>
+</body>
+</html>

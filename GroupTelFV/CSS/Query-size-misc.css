@@ -1,0 +1,50 @@
+﻿
+
+/*under 1877px**************************************************************************/
+
+@media (max-width: 115em) {
+    /*
+       .grid-log{
+        margin-top:80vh;
+
+    }
+
+  */
+
+
+
+    body {
+        overflow-x: hidden;
+    }
+   
+   
+    .search{
+        margin-right:40rem;
+        margin-top:2rem;
+    }
+    .grid-log {
+        margin-top: 18vh !important;
+    }
+    .user-box {
+        margin-top: 32vh !important;
+    }
+}
+
+
+/*UNDER 700PX*****************************************************/
+@media (max-width: 46rem) {
+    body {
+       
+       
+    }
+    
+    .about-us p{
+        font-size:1rem;
+        grid-column:span 1/-1;
+    }
+
+
+
+
+
+}

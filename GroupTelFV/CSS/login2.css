@@ -1,0 +1,332 @@
+﻿*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9eff7;
+}
+
+/******************************NAVBAR**********************************/
+/*.logo{
+   margin-top:-3rem;
+   font-size:2.4rem;
+}
+.main-nav-link .result {
+    color: #fff !important;
+}
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: -2rem;
+    margin-right: 3rem;
+}
+
+.main-nav-link2:link,
+.main-nav-link2:visited {
+    background-color: #2596be;
+    padding: .1rem 1rem;
+    border-radius: 9px;
+    color: #fff;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -4.8rem;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.main-nav-link2:hover,
+.main-nav-link2:active {
+    background-color: #07536f;
+    font-size: 1.4rem;
+    padding: .1rem 1rem;
+    border-radius: 9px;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -4.8rem;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    color: #444;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2.4rem;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #07536f;
+}
+
+nav {
+    padding-top: 6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-nav-mobile1 {*/
+ /*  opacity:0;*/
+    /*cursor: pointer;
+   margin-top:-10rem;
+   margin-right:50rem;*/
+/*    display: none;
+*//*}
+
+.icon-mobile-nav {
+    height: 7.2rem;
+    width: 7.2rem;
+    color: #333;
+}
+
+    .icon-mobile-nav[name="close-outline"] {
+        display: none;
+    }
+
+.btn-nav:link,
+.btn-nav:visited {
+    color: #444;
+    border: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2.4rem;
+    display: inline-block;
+}
+
+.btn-nav:hover,
+.btn-nav:active {
+    color: #192b52;
+    border: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2.4rem;
+    display: inline-block;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 1rem !important;
+}*/
+
+/* Dropdown Button */
+/*.dropbtn {
+    background-color: #3f9bea;
+    color: white;
+    padding: .45rem;
+    font-size: 1rem;
+    border-radius: 1.2rem;
+    margin-right:-9rem;
+    border: none;
+}*/
+
+/* The container <div> - needed to position the dropdown content */
+/*.dropdown {
+    position: relative;
+    margin-top:-2.15rem;
+    display: inline-block;
+}*/
+
+/* Dropdown Content (Hidden by Default) */
+/*.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-right:-8rem;
+    background-color: #f1f1f1;
+    min-width: 15rem;
+    font-size: 1.2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}*/
+
+    /* Links inside the dropdown */
+    /*.dropdown-content a {
+        color: black;
+        padding: 1rem 1.2rem;
+        text-decoration: none;
+        display: block;
+        transition: all 1s;
+    }*/
+
+        /* Change color of dropdown links on hover */
+        /*.dropdown-content a:hover {
+            background-color: #ddd;
+            animation: ease-in;
+        }*/
+
+/* Show the dropdown menu on hover */
+/*.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: transparent;
+    animation: ease-in;
+}*/
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/*.dropdown:hover .dropbtn {
+    background-color: #093865;
+    transition: all 1s;
+}*/
+
+
+/***************************SEARCH BAR*******************************/
+.search {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: .8rem;
+    padding: .5rem .1rem;   
+    width: 10rem;
+    
+   margin-right:85rem;
+    
+   
+   
+}
+
+.search1 {
+    grid-column:1;
+    border-radius: .8rem;
+    padding: .5rem 1rem;
+    margin-right:-40rem;
+    width: 30rem;
+}
+
+.btn-search {
+    grid-column: 2;
+    font-size: 1.2rem;
+    background-color: #2596be;
+    border-radius: 1.4rem;
+    padding: .7rem 1rem;
+    color: #fff;
+    margin-right:-10rem;
+    margin-left:10rem;
+    
+}
+
+    .btn-search:hover {
+        background-color: #07536f;
+       
+    }
+
+.line{
+    border:2px solid #000;
+}
+/**************************************MAIN LAYOUT*/
+.grid-log {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: .05rem solid #000;
+    height: 30rem;
+    width: 45rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow:0 3.5rem 2rem #777;
+}
+.grid-log-reg {
+    
+    margin-top: 5rem;
+    display: grid;
+    margin-right:40rem;
+    grid-template-columns: repeat(2,1fr);
+    border: .05rem solid #000;
+    height: 30rem;
+    width: 45rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3.5rem 2rem #777;
+}
+.grid-1{
+    grid-column:1;
+}
+.grid-2{
+    grid-column:2;
+    
+}
+.img-log {
+    min-height: 29rem;
+    max-height: 29rem;
+    min-width: 25rem;
+    max-width: 25rem;
+}
+
+.form-control{
+    border-radius:12px;
+    padding:.6rem 1rem;
+    margin-bottom:1rem;
+    margin-right:-.1rem;
+    background-color:#b5b4b4;
+
+}
+.form-control-reg {
+    border-radius: 12px;
+    padding: .6rem 1rem;
+    margin-bottom: 1rem;
+    margin-right: .9rem;
+    background-color: #b5b4b4;
+}
+    .form-control-reg:first-child{
+        margin-top:1rem;
+    }
+    .label {
+        color: #000;
+        margin-left: .3rem;
+    }
+
+.btn-log {
+    background-color: #6a8ae8;
+    font-size: 1.4rem;
+    border-radius: 1.2rem;
+    padding: .5rem 1rem;
+    transition: all .4s;
+    border-style: none;
+    text-decoration: none;
+    color: #f7f1f1;
+    margin-left: 10rem;
+    margin-right:1rem;
+    background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%)
+}
+
+    .btn-log:hover {
+        background-color: #314fa9;
+        background-image: linear-gradient(1deg, #3c43c8, #0b66a1 99%)
+    }
+
+.btn-log1 {
+    background-color: #88a0e6;
+    font-size: 1.4rem;
+    border-radius: 1.2rem;
+    padding: .2rem .6rem;
+    margin-left:10rem;
+    margin-right:1rem;
+    transition: all .4s;
+    border-style: none;
+    text-decoration: none;
+    color: #f7f1f1;
+}
+
+    .btn-log1:hover {
+        background-color: #314fa9;
+    }
+.register p{
+   font-size:1.4rem;
+    margin-bottom:1rem;
+}
+

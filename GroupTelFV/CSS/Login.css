@@ -1,0 +1,333 @@
+﻿
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080710;
+}
+
+
+
+
+
+.register{
+    margin-top:.5rem;
+    color:#fff;
+    font-size:2rem;
+}
+    .register a {
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        background: #333;
+        text-decoration:none;
+        padding:.6rem 1.2rem;
+        margin: 1rem;
+        
+        border: none;
+        border-radius: 1rem;
+        box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+        color: #222;
+        font-size: 1.8rem;
+        
+    }
+        .register a:hover {
+            box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+            font-size: 1.7rem;
+            transition: 500ms;
+            background-color: #174f8a;
+        }
+
+.home-button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: #333;
+    text-decoration: none;
+    padding: .6rem 1.2rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    color: #222;
+    font-size: 1.8rem;
+   
+}
+
+    .home-button:hover {
+        box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+        font-size: 1.7rem;
+        color: #fff;
+        transition: 500ms;
+        background-color: #174f8a;
+    }
+
+
+.home-button1 {
+    margin-top:6.5rem;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background: #333;
+    color:#2f2a2a !important;
+    text-decoration: none;
+    padding: .6rem 1.2rem;
+    border: none;
+    border-radius: 1.2rem;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    font-size: 1.6rem;
+}
+
+    .home-button1:hover {
+        box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+        font-size: 1.7rem;
+        color: #fff;
+        transition: 500ms;
+        background-color: #174f8a;
+    }
+
+
+
+.register a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #174f8a;
+    border-radius: 12px;
+}
+
+
+.btn-log {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: #333;
+    text-decoration: none;
+    padding: .6rem 1.2rem;
+    margin: 2rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    color: #222;
+    font-size: 1.8rem;
+    
+}
+    .btn-log:hover {
+        box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+        font-size: 1.7rem;
+        transition: 500ms;
+        background-color: #8a4117;
+        color:#fff;
+    }
+
+
+
+.btn-log1 {
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    background: #333;
+    text-decoration: none;
+    padding: .6rem 1.2rem;
+    margin: .6rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+    .btn-log1:hover {
+        box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+        font-size: 1.7rem;
+        transition: 500ms;
+        background-color: #0d3472;
+        color: #ba9898;
+    }
+
+
+.background {
+    width: 600px;
+    height: 720px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+
+    .background .shape {
+        height: 400px;
+        width: 200px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+.shape:first-child {
+    background: linear-gradient( #1845ad, #23a2f6 );
+    left: -80px;
+    top: -80px;
+}
+
+.shape:last-child {
+    background: linear-gradient( to right, #ff512f, #f09819 );
+    right: -30px;
+    bottom: -80px;
+}
+
+form {
+    height: 620px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.grid-layout {
+    grid-column: 2/;
+    grid-row: 1;
+}
+.grid-layout1 {
+    
+    grid-column: 1;
+    grid-row:1;
+}
+
+
+.grid-layout2{
+   
+   margin-top:2rem;
+    grid-column: 1/-1;
+    grid-row:2;
+}
+.grid-layout3 {
+    margin-top:1rem;
+    grid-column: 2/-1;
+    grid-row: 2;
+}
+.form1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+}   
+
+
+
+
+    form * {
+        font-family: 'Poppins',sans-serif;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+
+    form h3 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+    }
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    color:#fff;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 3px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3f9bea;
+    color: white;
+    padding: .8rem;
+    font-size: 16px;
+    border-radius: 1.2rem;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    font-size: 1.4rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: all 1s;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            animation: ease-in;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: transparent;
+    animation: ease-in;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #093865;
+    transition: all 1s;
+}
+
+
+/*button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}*/

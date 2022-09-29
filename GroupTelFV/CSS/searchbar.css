@@ -1,0 +1,37 @@
+﻿.search {
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: .8rem;
+    padding: .5rem 1rem;
+    margin-right:37rem;
+    width: 40rem;
+    margin-top: 5rem;
+    height: 2rem;
+    gap: 2rem;
+}
+
+.search1 {
+    margin-right: -35rem;
+    border-radius: .8rem;
+    padding: .5rem 1rem;
+    margin-right: -1rem;
+    width: 30rem;
+}
+
+.btn-search {
+    font-size: 1.2rem;
+    background-color: #2596be;
+    border-radius: 1.4rem;
+    padding: .7rem 1rem;
+    color: #fff;
+}
+
+    .btn-search:hover {
+        background-color: #07536f;
+        border-radius: 1.2rem;
+        padding: .7rem 1rem;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color .5s;
+    }
